@@ -1,9 +1,10 @@
 /*
  * board_stepper.cpp - board-specific code for stepper.cpp
+ * For: /board/gQuadratic
  * This file is part of the g2core project
  *
- * Copyright (c) 2016 Alden S. Hart, Jr.
- * Copyright (c) 2016 Robert Giseburt
+ * Copyright (c) 2016 - 2018 Alden S. Hart, Jr.
+ * Copyright (c) 2016 - 2018 Robert Giseburt
  *
  * This file ("the software") is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 as published by the
@@ -28,7 +29,7 @@
 
 #include "board_stepper.h"
 
-// These are identical to board_stepper.h, except for the word "extern"
+// These are identical to board_stepper.h, except for the word "extern", and they have the initialization parameters
 StepDirStepper<Motate::kSocket1_StepPinNumber,
                Motate::kSocket1_DirPinNumber,
                Motate::kSocket1_EnablePinNumber,
@@ -36,7 +37,7 @@ StepDirStepper<Motate::kSocket1_StepPinNumber,
                Motate::kSocket1_Microstep_1PinNumber,
                Motate::kSocket1_Microstep_2PinNumber,
                Motate::kSocket1_VrefPinNumber>
-    motor_1{};
+    motor_1{M1_STEP_POLARITY, M1_ENABLE_POLARITY};
 
 StepDirStepper<Motate::kSocket2_StepPinNumber,
                Motate::kSocket2_DirPinNumber,
@@ -45,36 +46,9 @@ StepDirStepper<Motate::kSocket2_StepPinNumber,
                Motate::kSocket2_Microstep_1PinNumber,
                Motate::kSocket2_Microstep_2PinNumber,
                Motate::kSocket2_VrefPinNumber>
-    motor_2{};
+    motor_2{M2_STEP_POLARITY, M2_ENABLE_POLARITY};
 
 StepDirHobbyServo<Motate::kServo1_PinNumber> motor_3;
-
-// StepDirStepper<
-//    Motate::kSocket4_StepPinNumber,
-//    Motate::kSocket4_DirPinNumber,
-//    Motate::kSocket4_EnablePinNumber,
-//    Motate::kSocket4_Microstep_0PinNumber,
-//    Motate::kSocket4_Microstep_1PinNumber,
-//    Motate::kSocket4_Microstep_2PinNumber,
-//    Motate::kSocket4_VrefPinNumber> motor_4 {};
-//
-// StepDirStepper<
-//    Motate::kSocket5_StepPinNumber,
-//    Motate::kSocket5_DirPinNumber,
-//    Motate::kSocket5_EnablePinNumber,
-//    Motate::kSocket5_Microstep_0PinNumber,
-//    Motate::kSocket5_Microstep_1PinNumber,
-//    Motate::kSocket5_Microstep_2PinNumber,
-//    Motate::kSocket5_VrefPinNumber> motor_5 {};
-
-// StepDirStepper<
-//    Motate::kSocket6_StepPinNumber,
-//    Motate::kSocket6_DirPinNumber,
-//    Motate::kSocket6_EnablePinNumber,
-//    Motate::kSocket6_Microstep_0PinNumber,
-//    Motate::kSocket6_Microstep_1PinNumber,
-//    Motate::kSocket6_Microstep_2PinNumber,
-//    Motate::kSocket6_VrefPinNumber> motor_6 {};
 
 Stepper* Motors[MOTORS] = {&motor_1, &motor_2, &motor_3};
 
