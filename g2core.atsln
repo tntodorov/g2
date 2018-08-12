@@ -11,6 +11,7 @@ Global
 		G2v9k|ARM = G2v9k|ARM
 		gShield|ARM = gShield|ARM
 		Makeblock-v9|ARM = Makeblock-v9|ARM
+		MiniMill|ARM = MiniMill|ARM
 		Othermill|ARM = Othermill|ARM
 		PrintrbotSimple1403-printrboardG2v3|ARM = PrintrbotSimple1403-printrboardG2v3|ARM
 		PrintrbotSimple1608-printrboardG2v3|ARM = PrintrbotSimple1608-printrboardG2v3|ARM
@@ -31,7 +32,8 @@ Global
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.gShield|ARM.ActiveCfg = gShield|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.gShield|ARM.Build.0 = gShield|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.Makeblock-v9|ARM.ActiveCfg = Makeblock-v9|ARM
-		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.Makeblock-v9|ARM.Build.0 = Makeblock-v9|ARM
+		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.MiniMill|ARM.ActiveCfg = MiniMill|ARM
+		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.MiniMill|ARM.Build.0 = MiniMill|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.Othermill|ARM.ActiveCfg = Othermill|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.Othermill|ARM.Build.0 = Othermill|ARM
 		{44EA8FEC-55D7-4149-8A78-A574FC26BF51}.PrintrbotSimple1403-printrboardG2v3|ARM.ActiveCfg = PrintrbotSimple1403-printrboardG2v3|ARM
@@ -60,6 +62,7 @@ Global
 		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.G2v9k|ARM.ActiveCfg = Stub|ARM
 		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.gShield|ARM.ActiveCfg = Stub|ARM
 		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.Makeblock-v9|ARM.ActiveCfg = Stub|ARM
+		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.MiniMill|ARM.ActiveCfg = Stub|ARM
 		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.Othermill|ARM.ActiveCfg = Stub|ARM
 		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.PrintrbotSimple1403-printrboardG2v3|ARM.ActiveCfg = Stub|ARM
 		{D7779B24-5CD6-4A1B-893C-2CAE8CF7A3A0}.PrintrbotSimple1608-printrboardG2v3|ARM.ActiveCfg = Stub|ARM
