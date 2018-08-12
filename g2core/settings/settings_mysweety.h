@@ -96,7 +96,7 @@
 
 #define M2_MOTOR_MAP                AXIS_Y
 #define M2_STEP_ANGLE               1.8
-#define M2_TRAVEL_PER_REV           4.00
+#define M2_TRAVEL_PER_REV           8.00
 #define M2_MICROSTEPS               8
 #define M2_POLARITY                 0
 #define M2_POWER_MODE               MOTOR_POWER_MODE
@@ -159,8 +159,8 @@
 #define Z_HOMING_DIRECTION          1
 #define Z_SEARCH_VELOCITY           (Z_VELOCITY_MAX * 0.66666)
 #define Z_LATCH_VELOCITY            (Z_VELOCITY_MAX * 0.33333)
-#define Z_LATCH_BACKOFF             3
-#define Z_ZERO_BACKOFF              1
+#define Z_LATCH_BACKOFF             5
+#define Z_ZERO_BACKOFF              3
 #define Z_SWITCH_MODE_MIN           SW_MODE_DISABLED
 #define Z_SWITCH_MODE_MAX           SW_MODE_HOMING_LIMIT
 #define Z_HOMING_DIR                1
@@ -228,7 +228,7 @@
 #define DI9_ACTION                  INPUT_ACTION_NONE
 #define DI9_FUNCTION                INPUT_FUNCTION_NONE
 
-#define P1_PWM_FREQUENCY            10000                 // in Hz
-#define P1_CW_SPEED_LO              1000                  // in RPM (arbitrary units)
-#define P1_CW_SPEED_HI              20500
-#define P1_CW_PHASE_HI              0.95
+#define P1_PWM_FREQUENCY            1000                  // in Hz
+#define P1_CW_SPEED_LO              100                   // in RPM (arbitrary units)
+#define P1_CW_SPEED_HI              19000
+#define P1_CW_PHASE_HI              0.90
