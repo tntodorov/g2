@@ -212,4 +212,12 @@ ifeq ("$(CONFIG)","pendulum")
     endif
     SETTINGS_FILE="settings_synthetos_pendulum_v2.h"
 endif
+
+ifeq ("$(CONFIG)","MiniMill")
+	ifeq ("$(BOARD)","NONE")
+		BOARD=minimill
+	endif
+	SETTINGS_FILE="settings_minimill.h"
+endif
+
 include $(wildcard ./board/$(STAR).mk)

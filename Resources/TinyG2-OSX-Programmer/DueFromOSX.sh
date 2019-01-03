@@ -1,6 +1,22 @@
 #!/bin/bash
-arduinoAppDir=/Applications
-PATH=$PATH:$arduinoAppDir/Arduino.app/Contents/Resources/Java/hardware/tools/g++_arm_none_eabi/bin/:$arduinoAppDir/Arduino.app/Contents/Resources/Java/hardware/tools/
+FLASH_TOOLS="arduino-flash-tools-master"
+BOSSAC=$FLASH_TOOLS"/tools_darwin/bossac/bin/bossac"
+OBJCOPY=$FLASH_TOOLS"/bins/arm-none-eabi-objcopy"
+
+
+#downloading arduino build tools
+if [ -d "arduino-flash-tools-master" ]; then
+  # Control will enter here if $DIRECTORY exists.
+  echo "We have the flashing tools.. moving on."
+else
+   echo "We do not have the flash tools.. Getting Them"
+   wget https://github.com/synthetos/arduino-flash-tools/archive/master.zip && unzip -x master.zip && rm -f master.zip
+
+fi
+
+quit
+
+
 
 function show_usage() {
 	cat <<END
