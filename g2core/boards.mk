@@ -161,5 +161,12 @@ ifeq ("$(CONFIG)","EggBot")
 endif
 
 
+ifeq ("$(CONFIG)","MiniMill")
+	ifeq ("$(BOARD)","NONE")
+		BOARD=minimill
+	endif
+	SETTINGS_FILE="settings_minimill.h"
+endif
+
 include $(wildcard ./board/$(STAR).mk)
 
