@@ -30,7 +30,7 @@
 /***********************************************************************/
 
 // ***> NOTE: The init message must be a single line with no CRs or LFs
-#define INIT_MESSAGE "Initializing configs to MYSWEETY profile"
+#define INIT_MESSAGE "Initializing configs to OpenBuilds Mini-Mill profile"
 
 //**** GLOBAL / GENERAL SETTINGS ******************************************************
 
@@ -184,32 +184,32 @@
     INPUT_FUNCTION_PANIC
 */
 // Xmin on v9 board
-#define DI1_MODE                    NORMALLY_OPEN
+#define DI1_MODE                    NORMALLY_CLOSED
 #define DI1_ACTION                  INPUT_ACTION_FAST_STOP
 #define DI1_FUNCTION                INPUT_FUNCTION_LIMIT
 
 // Xmax
-#define DI2_MODE                    NORMALLY_OPEN
+#define DI2_MODE                    NORMALLY_CLOSED
 #define DI2_ACTION                  INPUT_ACTION_FAST_STOP
 #define DI2_FUNCTION                INPUT_FUNCTION_LIMIT
 
 // Ymin
-#define DI3_MODE                    NORMALLY_OPEN
+#define DI3_MODE                    NORMALLY_CLOSED
 #define DI3_ACTION                  INPUT_ACTION_FAST_STOP
 #define DI3_FUNCTION                INPUT_FUNCTION_LIMIT
 
 // Ymax
-#define DI4_MODE                    NORMALLY_OPEN
+#define DI4_MODE                    NORMALLY_CLOSED
 #define DI4_ACTION                  INPUT_ACTION_FAST_STOP
 #define DI4_FUNCTION                INPUT_FUNCTION_LIMIT
 
 // Zmin
-#define DI5_MODE                    NORMALLY_OPEN
+#define DI5_MODE                    NORMALLY_CLOSED
 #define DI5_ACTION                  INPUT_ACTION_FAST_STOP
 #define DI5_FUNCTION                INPUT_FUNCTION_LIMIT
 
 // Zmax
-#define DI6_MODE                    NORMALLY_OPEN
+#define DI6_MODE                    NORMALLY_CLOSED
 #define DI6_ACTION                  INPUT_ACTION_FAST_STOP
 #define DI6_FUNCTION                INPUT_FUNCTION_LIMIT
 
