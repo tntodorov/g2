@@ -30,7 +30,7 @@
 /***********************************************************************/
 
 // ***> NOTE: The init message must be a single line with no CRs or LFs
-#define INIT_MESSAGE "Initializing configs to MYSWEETY profile"
+#define INIT_MESSAGE "Initializing configs to MiniMill profile"
 
 //**** GLOBAL / GENERAL SETTINGS ******************************************************
 
