@@ -160,6 +160,15 @@ ifeq ("$(CONFIG)","EggBot")
     SETTINGS_FILE="settings_eggbot.h"
 endif
 
+#########
+# tntodorov configs:
+
+ifeq ("$(CONFIG)","MYSWEETY")
+	ifeq ("$(BOARD)","NONE")
+		BOARD=mysweety
+	endif
+	SETTINGS_FILE="settings_mysweety.h"
+endif
 
 ifeq ("$(CONFIG)","MiniMill")
 	ifeq ("$(BOARD)","NONE")
